@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #4a4a4a;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 20px;
+            border-bottom: 4px solid #333; 
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 80px;
+            width: 80px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-family: 'Lucida', cursive;
+            font-size: 36px;
+            margin-left: 15px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul li {
+            margin-right: 25px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        header nav ul li a img {
+            height: 24px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .recent-dishes {
+            width: 25%;
+            margin-right: 10px;
+        }
+
+        .recent-dishes h2 {
+            border-left: 5px solid #d08d91;
+            padding-left: 10px;
+            font-size: 30px;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+        }
+
+        .recent-dishes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recent-dishes ul li {
+            margin-bottom: 15px;
+        }
+
+        .recent-dishes ul li a {
+            text-decoration: none;
+            color: #ff69b4;
+            font-weight: bold;
+            font-size: 24px; 
+            line-height: 1.5;
+            transition: color 0.3s;
+        }
+
+        .recent-dishes ul li a:hover {
+            color: #d08d91; 
+        }
+
+        .featured-posts {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 3px;
+        }
+
+        .featured-posts .post {
+            width: 32%;
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #dcdcdc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .featured-posts .post img {
+            width: 100%;
+            height: 300px; 
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .featured-posts .post h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-family: 'Georgia', serif;
+            color: #498b13;
+        }
+
+        .featured-posts .post p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Footer Styles */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #ff6347;
+            padding: 15px 0;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            z-index: 999;
+        }
+
+        footer .text span {
+            font-size: 17px;
+            font-weight: 400;
+            color: white;
+        }
+
+        footer .text span a {
+            font-weight: 500;
+            color: white;
+        }
+
+        footer .text span a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\shrey\Downloads\logorestaurant.jpg" alt="Restaurant Blog Logo">
+                <h1>Delicious Bites</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#recent-dishes">Recipes</a></li>
+                    <li><a href="#featured-posts">Featured Posts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="recent-dishes" class="recent-dishes">
+            <h2>Latest Dishes</h2>
+            <ul>
+                <li><a href="https://www.bonappetit.com/recipe/easy-spaghetti-and-meatballs">Spaghetti and Meatballs</a></li>
+                <li><a href="https://www.masterclass.com/articles/how-to-make-classic-chicken-parmesan-at-home">Chicken Parmesan</a></li>
+                <li><a href="https://www.themediterraneandish.com/lemon-garlic-chicken/">Lemon Chicken Breasts</a></li>
+            </ul>
+        </section>
+        
+        <section id="featured-posts" class="featured-posts">
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\chicken.jpeg" alt="Delicious Dish 1">
+                <h3>Chicken fry</h3>
+                <h3><a href="https://www.swiggy.com/fried-chicken-dish-restaurants-near-me">Order Now</a></h3>
+            </div>
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\mutton biryani.jpg" alt="Delicious Dish 2">
+                <h3>Mutton biryani</h3>
+                <h3><a href="https://www.zomato.com/bangalore/mutton-biryani-junction-kalyan-nagar-bangalore/order">Order Now</a></h3>
+            </div>
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\lava cake.jpg" alt="Delicious Dish 3">
+                <h3>Chocolate Lava Cake</h3>
+                <h3><a href="https://www.dominos.co.in/menu/side-orders/lava-cake">Order Now</a></h3>
+            </div>
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\panipuri.jpg" alt="Delicious Dish 4">
+                <h3>panipuri</h3>
+                <h3><a href="https://www.swiggy.com/pani-puri-dish-restaurants-near-me">Order Now</a></h3>
+            </div>
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\hamburger.jpg" alt="Delicious Dish 5">
+                <h3>Classic Cheeseburger</h3>
+                <h3><a href="https://www.swiggy.com/city/delhi/burger-kingdom-rohini-rest147045">Order Now</a></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text">
+            <span>Created By <a href="#">Shreya Thumma</a> | &#169; All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+</html>
